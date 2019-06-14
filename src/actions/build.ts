@@ -7,7 +7,10 @@ import { Command, SubOptions, CommandArgsProvider } from 'func'
 
 const cwd = process.cwd()
 
-@Command({ name: 'build' })
+@Command({
+  name: 'build',
+  description: 'pack all files',
+})
 @SubOptions([{
   name: 'file', alias: 'f', type: String,
 }, {

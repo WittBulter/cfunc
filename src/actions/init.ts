@@ -6,7 +6,10 @@ import * as print from '../utils/print'
 import * as spinner from '../utils/spinner'
 
 
-@Command({ name: 'init' })
+@Command({
+  name: 'init',
+  description: 'create a `func` project',
+})
 export class Init {
   private projectName: string
   private projectPath: string

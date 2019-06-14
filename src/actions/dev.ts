@@ -7,7 +7,10 @@ import { exec } from 'child_process'
 
 const cwd = process.cwd()
 
-@Command({ name: 'dev' })
+@Command({
+  name: 'dev',
+  description: 'setup link',
+})
 @SubOptions([{
   name: 'file', alias: 'f', type: String,
 }])
