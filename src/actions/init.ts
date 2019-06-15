@@ -67,7 +67,7 @@ export class Init {
     delete pkg.author
     delete pkg.bugs
     delete pkg.description
-    fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, '\t'))
+    fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2))
   }
   
 }

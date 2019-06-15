@@ -44,7 +44,7 @@ export class Dev {
       pkg.bin = {
         [pkg.name]: './dist/bin.js',
       }
-      fs.writeFileSync(this.pkgPath, JSON.stringify(pkg, null, '\t'))
+      fs.writeFileSync(this.pkgPath, JSON.stringify(pkg, null, 2))
     }
     this.bin = Object.keys(pkg.bin)[0]
     
